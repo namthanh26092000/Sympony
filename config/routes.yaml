@@ -1,0 +1,36 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+app_lucky_number:
+    path: /lucky/number/{max}
+    controller: App\Controller\LuckyController::num
+
+blog_list:
+    path: /blog
+    controller: App\Controller\BlogController::list
+
+api_post_show:
+    path: /api/post/{id}
+    controller: App\Controller\BlogController::show
+    methods: GET|HEAD
+abc:
+    path: /index
+    controller: App\Controller\BlogController::index
+find:
+    path: /user/{id}
+    controller: App\Controller\UserController::show
+update:
+    path: /update/{id}
+    controller: App\Controller\UserController::update
+test:
+    path: /test
+    controller: App\Controller\UserController::test
+remove:
+    path: /remove/{id}
+    controller: App\Controller\UserController::remove
+getAll:
+    path: /getAll/{id}
+    controller: App\Controller\UserController::getAll 
+new:
+    path: /new
+    controller: App\Controller\UserController::new
